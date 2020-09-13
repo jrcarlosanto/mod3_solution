@@ -1,0 +1,11 @@
+<table class="table table-striped">
+  <tr ng-repeat="item in foundItems">
+      <td>{{ item.short_name }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.description }}</td>
+      <td style="text-align:right;">
+        <button ng-click="onRemove({index: $index});">"Don't want this one!"</button>
+      </td>
+  </tr>
+</table>
+<div class="error" ng-if="!foundItems">Nothing Found!</div>
