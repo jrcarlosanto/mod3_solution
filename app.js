@@ -43,36 +43,9 @@ function NarrowItDownController(MenuSearchService) {
       console.log("Something went wrong.");
     });
   };
-
-
-  //  var promise = MenuSearchService.getMatchedMenuItems();
-
- // promise.then(function (response) {
-  //  menu.found = response.data
-   // console.log(response.data);
-    //menu.found = MenuSearchService.searchText(menu.text,response.data);
- // })
-  //.catch(function (error) {
-   // console.log("Something went terribly wrong.");
-  //});
-
-  //menu.getMatchedMenuItems = function (searchTerm) {
-   // var promise = MenuSearchService.getMatchedMenuItems (searchTerm);
-
-   // promise.then(function (response) {
-  //    menu.fountItens = response.data;
-   //   console.log(response.data);
-   // })
-    //.catch(function (error) {
-     // console.log(error);
-   // })
-  //};
-
-  //menu.found = menu.getMatchedMenuItems;
-
+ 
   menu.removeItem = function (itemIndex){
     menu.found.splice(itemIndex, 1);
-    //MenuSearchService.removeItem(itemIndex);
   };
 } 
 
@@ -101,33 +74,6 @@ function MenuSearchService($http, ApiBasePath) {
       return foundItems;
     });
   };
-
-
-  //service.searchText = function(text,data){
-   // for (var i=0; i<response.data.length(); i++){
-    //  if(text == data[i]){
-      //  found.push(data[i]);
-     // }
-   // }
-   // return found;
-    //console.log(found);
-  //};
-
-//  service.getMatchedMenuItems = function (searchTerm) {
-  //  var response = $http({
-//      method: "GET",
-//      url: (ApiBasePath),
- //     params: {
-  //      found: searchTerm
-   //   }
-   // });
-
-//    return response;
-  //};
-
- // service.removeItem = function (itemIndex) {
-   // found.splice(itemIndex, 1);
-  //};
 }
 
 })();
