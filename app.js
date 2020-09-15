@@ -13,7 +13,8 @@ function FoundItemsD() {
     restrict: "E",
     scope: {
       foundItems: '<',
-      onRemove: '&'
+      onRemove: '&',
+      textImput: '<'
     }
   };
 
