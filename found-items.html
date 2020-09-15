@@ -1,4 +1,4 @@
-<table class="table table-striped">
+<table class="table table-striped" ng-init="foundItems.length=1">
   <tr ng-repeat="item in foundItems">
       <td>{{ item.short_name }}</td>
       <td>{{ item.name }}</td>
@@ -8,4 +8,4 @@
       </td>
   </tr>
 </table>
-<div class="error" ng-if="!(foundItems || foundItems.length!=0 )">Nothing Found!</div>
+<div class="error" ng-if="!foundItems || foundItems.length==0">Nothing Found!</div>
