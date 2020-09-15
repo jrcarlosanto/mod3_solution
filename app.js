@@ -38,6 +38,7 @@ function NarrowItDownController(MenuSearchService) {
     var promise = MenuSearchService.getMatchedMenuItems(menu.searchTerm);
     promise.then(function (response) {
       menu.found = response;
+      menu.textImputLength = menu.searchTerm;
     })
     .catch(function (error) {
       console.log("Something went wrong.");
