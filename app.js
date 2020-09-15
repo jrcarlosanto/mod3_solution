@@ -28,6 +28,7 @@ function NarrowItDownController(MenuSearchService) {
 
   menu.searchTerm = '';
   menu.found = [];
+  menu.textImputLength = '';
 
   menu.getMenuItems = function() {
     if (!(menu.searchTerm)) {
